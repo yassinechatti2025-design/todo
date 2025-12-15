@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import NavBar from '../components/NavBar.jsx'
+import NavBar from '../components/NavBar'
 import RateLimitedUI from '../components/RateLimitedUI';
 import axios from 'axios';
 import NoteCard from '../components/NoteCard';
@@ -25,7 +25,7 @@ const HomePage = () => {
         if (error.response?.status === 429) {
           setRateLimited(true);
         } else {
-          toast.eroor("failed to fetch notes.");
+          toast.error("failed to fetch notes.");
         }
       }
       finally {
