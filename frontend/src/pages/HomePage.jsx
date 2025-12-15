@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBar.jsx'
 import RateLimitedUI from '../components/RateLimitedUI';
 import axios from 'axios';
 import NoteCard from '../components/NoteCard';
